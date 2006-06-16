@@ -1,0 +1,14 @@
+category: Audio Libs
+requires: cygwin libogg-devel speex-devel libvorbis-devel
+external-source: libfishsound
+sdesc: "Vorbis/Speex wrapper library (development)"
+ldesc: "FishSound (libfishsound) provides a simple programming interface for
+decoding and encoding audio data using the Xiph.Org codecs Vorbis and
+Speex.
+
+libfishsound is a wrapper around the existing codec libraries and
+provides a consistent, higher-level programming interface. It has been
+designed for use in a wide variety of applications; it has no direct
+dependencies on Annodex or Ogg encapsulation, though it is most commonly
+used in conjunction with liboggz to decode or encode Ogg encapsulated
+Vorbis or Speex files."

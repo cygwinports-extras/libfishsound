@@ -1,0 +1,171 @@
+libfishsound
+------------------------------------------
+FishSound (libfishsound) provides a simple programming interface for
+decoding and encoding audio data using the Xiph.Org codecs Vorbis and
+Speex.
+
+libfishsound is a wrapper around the existing codec libraries and
+provides a consistent, higher-level programming interface. It has been
+designed for use in a wide variety of applications; it has no direct
+dependencies on Annodex or Ogg encapsulation, though it is most commonly
+used in conjunction with liboggz to decode or encode Ogg encapsulated
+Vorbis or Speex files.
+
+Runtime requirements:
+  cygwin-1.5.20-1 (>=20060604)
+  libogg0-1.1.2-1
+  liboggz1-0.9.5-1      (examples only)
+  libsndfile1-1.0.16-1  (examples only)
+  libspeex1-1.1.10-1
+  libvorbis0-1.1.1-1
+  libvorbisenc2-1.1.1-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.20-1 (>=20060604)
+  autoconf2.5-2.59-2
+  automake1.9-1.9.6-1
+  binutils-20050610-1
+  cygport-0.2.1-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  libtool1.5-1.5.22-1
+  make-3.80-1
+  pkg-config-0.20-1
+  sed-4.1.4-1
+
+Canonical website:
+  http://annodex.net/software/libfishsound/
+
+Canonical download:
+  http://annodex.net/software/libfishsound/download/
+
+-------------------------------------------
+
+Build instructions:
+  unpack libfishsound-0.7.0-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./libfishsound-0.7.0-X.cygport all
+
+This will create:
+  /usr/src/libfishsound-0.7.0-X-src.tar.bz2
+  /usr/src/libfishsound-0.7.0-X.tar.bz2
+  /usr/src/libfishsound-devel-0.7.0-X.tar.bz2
+  /usr/src/libfishsound-doc-0.7.0-X.tar.bz2
+  /usr/src/libfishsound1-0.7.0-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(libfishsound)
+  /usr/bin/fishsound-decenc.exe
+  /usr/bin/fishsound-decode.exe
+  /usr/bin/fishsound-encdec.exe
+  /usr/bin/fishsound-encode.exe
+  /usr/bin/fishsound-identify.exe
+  /usr/bin/fishsound-info.exe
+  /usr/share/doc/Cygwin/libfishsound-0.7.0.README
+  /usr/share/doc/libfishsound-0.7.0/AUTHORS
+  /usr/share/doc/libfishsound-0.7.0/COPYING
+  /usr/share/doc/libfishsound-0.7.0/ChangeLog
+  /usr/share/doc/libfishsound-0.7.0/INSTALL
+  /usr/share/doc/libfishsound-0.7.0/README
+
+(libfishsound1)
+  /usr/bin/cygfishsound-1.dll
+
+(libfishsound-devel)
+  /usr/include/fishsound/comments.h
+  /usr/include/fishsound/constants.h
+  /usr/include/fishsound/decode.h
+  /usr/include/fishsound/deprecated.h
+  /usr/include/fishsound/encode.h
+  /usr/include/fishsound/fishsound.h
+  /usr/lib/libfishsound.dll.a
+  /usr/lib/libfishsound.la
+  /usr/lib/pkgconfig/fishsound.pc
+
+(libfishsound-doc)
+  /usr/share/doc/libfishsound-0.7.0/html/annotated.html
+  /usr/share/doc/libfishsound-0.7.0/html/comments_8h-source.html
+  /usr/share/doc/libfishsound-0.7.0/html/comments_8h.html
+  /usr/share/doc/libfishsound-0.7.0/html/constants_8h-source.html
+  /usr/share/doc/libfishsound-0.7.0/html/constants_8h.html
+  /usr/share/doc/libfishsound-0.7.0/html/decode_8h-source.html
+  /usr/share/doc/libfishsound-0.7.0/html/decode_8h.html
+  /usr/share/doc/libfishsound-0.7.0/html/deprecated_8h-source.html
+  /usr/share/doc/libfishsound-0.7.0/html/deprecated_8h.html
+  /usr/share/doc/libfishsound-0.7.0/html/dir_000000.html
+  /usr/share/doc/libfishsound-0.7.0/html/dir_000001.html
+  /usr/share/doc/libfishsound-0.7.0/html/dir_000002.html
+  /usr/share/doc/libfishsound-0.7.0/html/dir_000003.html
+  /usr/share/doc/libfishsound-0.7.0/html/dirs.html
+  /usr/share/doc/libfishsound-0.7.0/html/doxygen.css
+  /usr/share/doc/libfishsound-0.7.0/html/doxygen.png
+  /usr/share/doc/libfishsound-0.7.0/html/encode_8h-source.html
+  /usr/share/doc/libfishsound-0.7.0/html/encode_8h.html
+  /usr/share/doc/libfishsound-0.7.0/html/files.html
+  /usr/share/doc/libfishsound-0.7.0/html/fishsound_8h-source.html
+  /usr/share/doc/libfishsound-0.7.0/html/fishsound_8h.html
+  /usr/share/doc/libfishsound-0.7.0/html/functions.html
+  /usr/share/doc/libfishsound-0.7.0/html/functions_vars.html
+  /usr/share/doc/libfishsound-0.7.0/html/globals.html
+  /usr/share/doc/libfishsound-0.7.0/html/globals_enum.html
+  /usr/share/doc/libfishsound-0.7.0/html/globals_eval.html
+  /usr/share/doc/libfishsound-0.7.0/html/globals_func.html
+  /usr/share/doc/libfishsound-0.7.0/html/globals_type.html
+  /usr/share/doc/libfishsound-0.7.0/html/group__about.html
+  /usr/share/doc/libfishsound-0.7.0/html/group__building.html
+  /usr/share/doc/libfishsound-0.7.0/html/group__configuration.html
+  /usr/share/doc/libfishsound-0.7.0/html/group__decode.html
+  /usr/share/doc/libfishsound-0.7.0/html/group__encode.html
+  /usr/share/doc/libfishsound-0.7.0/html/group__install.html
+  /usr/share/doc/libfishsound-0.7.0/html/group__win32.html
+  /usr/share/doc/libfishsound-0.7.0/html/index.html
+  /usr/share/doc/libfishsound-0.7.0/html/modules.html
+  /usr/share/doc/libfishsound-0.7.0/html/structFishSoundComment.html
+  /usr/share/doc/libfishsound-0.7.0/html/structFishSoundFormat.html
+  /usr/share/doc/libfishsound-0.7.0/html/structFishSoundInfo.html
+  /usr/share/doc/libfishsound-0.7.0/latex/Helvetica.ttf
+  /usr/share/doc/libfishsound-0.7.0/latex/Makefile
+  /usr/share/doc/libfishsound-0.7.0/latex/annotated.tex
+  /usr/share/doc/libfishsound-0.7.0/latex/comments_8h.tex
+  /usr/share/doc/libfishsound-0.7.0/latex/constants_8h.tex
+  /usr/share/doc/libfishsound-0.7.0/latex/decode_8h.tex
+  /usr/share/doc/libfishsound-0.7.0/latex/deprecated_8h.tex
+  /usr/share/doc/libfishsound-0.7.0/latex/dir_000000.tex
+  /usr/share/doc/libfishsound-0.7.0/latex/dir_000001.tex
+  /usr/share/doc/libfishsound-0.7.0/latex/dir_000002.tex
+  /usr/share/doc/libfishsound-0.7.0/latex/dir_000003.tex
+  /usr/share/doc/libfishsound-0.7.0/latex/dirs.tex
+  /usr/share/doc/libfishsound-0.7.0/latex/doxygen.sty
+  /usr/share/doc/libfishsound-0.7.0/latex/encode_8h.tex
+  /usr/share/doc/libfishsound-0.7.0/latex/files.tex
+  /usr/share/doc/libfishsound-0.7.0/latex/fishsound_8h.tex
+  /usr/share/doc/libfishsound-0.7.0/latex/group__about.tex
+  /usr/share/doc/libfishsound-0.7.0/latex/group__building.tex
+  /usr/share/doc/libfishsound-0.7.0/latex/group__configuration.tex
+  /usr/share/doc/libfishsound-0.7.0/latex/group__decode.tex
+  /usr/share/doc/libfishsound-0.7.0/latex/group__encode.tex
+  /usr/share/doc/libfishsound-0.7.0/latex/group__install.tex
+  /usr/share/doc/libfishsound-0.7.0/latex/group__win32.tex
+  /usr/share/doc/libfishsound-0.7.0/latex/index.tex
+  /usr/share/doc/libfishsound-0.7.0/latex/modules.tex
+  /usr/share/doc/libfishsound-0.7.0/latex/refman.tex
+  /usr/share/doc/libfishsound-0.7.0/latex/structFishSoundComment.tex
+  /usr/share/doc/libfishsound-0.7.0/latex/structFishSoundFormat.tex
+  /usr/share/doc/libfishsound-0.7.0/latex/structFishSoundInfo.tex
+
+------------------
+
+Port Notes:
+
+----- version 0.7.0-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
