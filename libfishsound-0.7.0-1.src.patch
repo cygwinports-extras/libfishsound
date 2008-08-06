@@ -1,4 +1,3 @@
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x ltmain.sh -x 'config.*' -x depcomp -x install-sh -x missing -x mkinstalldirs -x autom4te.cache -x '*compile' -x 'intltool*.in' -x 'xml-i18n-*.in' -x '*.pyc' -x '*.mo' -x '*.gmo' -x ABOUT-NLS -x Makevars.template -x COPYING -x INSTALL -x '*.orig' -x '*.rej' -x '*~' -x '*.temp' -x texinfo.tex -x ylwrap -x 'Makefile.in*' -x configure origsrc/libfishsound-0.7.0/Makefile.am src/libfishsound-0.7.0/Makefile.am
 --- origsrc/libfishsound-0.7.0/Makefile.am	2005-07-18 06:41:14.000000000 -0500
 +++ src/libfishsound-0.7.0/Makefile.am	2006-06-05 21:38:16.156250000 -0500
 @@ -44,4 +44,6 @@
@@ -10,7 +9,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x ltmain.sh -x 'config.*' -x depco
 +pkgconfig_DATA = fishsound.pc
 +
 +ACLOCAL_AMFLAGS = -I m4
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x ltmain.sh -x 'config.*' -x depcomp -x install-sh -x missing -x mkinstalldirs -x autom4te.cache -x '*compile' -x 'intltool*.in' -x 'xml-i18n-*.in' -x '*.pyc' -x '*.mo' -x '*.gmo' -x ABOUT-NLS -x Makevars.template -x COPYING -x INSTALL -x '*.orig' -x '*.rej' -x '*~' -x '*.temp' -x texinfo.tex -x ylwrap -x 'Makefile.in*' -x configure origsrc/libfishsound-0.7.0/doc/Makefile.am src/libfishsound-0.7.0/doc/Makefile.am
 --- origsrc/libfishsound-0.7.0/doc/Makefile.am	2005-07-18 06:41:14.000000000 -0500
 +++ src/libfishsound-0.7.0/doc/Makefile.am	2006-06-05 21:41:24.812500000 -0500
 @@ -36,21 +36,21 @@
@@ -41,7 +39,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x ltmain.sh -x 'config.*' -x depco
  
  clean-local:
  	if test -d libfishsound; then rm -rf libfishsound; fi
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x ltmain.sh -x 'config.*' -x depcomp -x install-sh -x missing -x mkinstalldirs -x autom4te.cache -x '*compile' -x 'intltool*.in' -x 'xml-i18n-*.in' -x '*.pyc' -x '*.mo' -x '*.gmo' -x ABOUT-NLS -x Makevars.template -x COPYING -x INSTALL -x '*.orig' -x '*.rej' -x '*~' -x '*.temp' -x texinfo.tex -x ylwrap -x 'Makefile.in*' -x configure origsrc/libfishsound-0.7.0/m4/ac-sys-extra-largefile.m4 src/libfishsound-0.7.0/m4/ac-sys-extra-largefile.m4
 --- origsrc/libfishsound-0.7.0/m4/ac-sys-extra-largefile.m4	1969-12-31 18:00:00.000000000 -0600
 +++ src/libfishsound-0.7.0/m4/ac-sys-extra-largefile.m4	2006-06-05 21:38:03.234375000 -0500
 @@ -0,0 +1,114 @@
@@ -159,7 +156,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x ltmain.sh -x 'config.*' -x depco
 +   fi
 +  ])
 +
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x ltmain.sh -x 'config.*' -x depcomp -x install-sh -x missing -x mkinstalldirs -x autom4te.cache -x '*compile' -x 'intltool*.in' -x 'xml-i18n-*.in' -x '*.pyc' -x '*.mo' -x '*.gmo' -x ABOUT-NLS -x Makevars.template -x COPYING -x INSTALL -x '*.orig' -x '*.rej' -x '*~' -x '*.temp' -x texinfo.tex -x ylwrap -x 'Makefile.in*' -x configure origsrc/libfishsound-0.7.0/m4/as-ac-expand.m4 src/libfishsound-0.7.0/m4/as-ac-expand.m4
 --- origsrc/libfishsound-0.7.0/m4/as-ac-expand.m4	1969-12-31 18:00:00.000000000 -0600
 +++ src/libfishsound-0.7.0/m4/as-ac-expand.m4	2006-06-05 21:38:03.250000000 -0500
 @@ -0,0 +1,43 @@
@@ -206,7 +202,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x ltmain.sh -x 'config.*' -x depco
 +  prefix=$prefix_save
 +  exec_prefix=$exec_prefix_save
 +])
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x ltmain.sh -x 'config.*' -x depcomp -x install-sh -x missing -x mkinstalldirs -x autom4te.cache -x '*compile' -x 'intltool*.in' -x 'xml-i18n-*.in' -x '*.pyc' -x '*.mo' -x '*.gmo' -x ABOUT-NLS -x Makevars.template -x COPYING -x INSTALL -x '*.orig' -x '*.rej' -x '*~' -x '*.temp' -x texinfo.tex -x ylwrap -x 'Makefile.in*' -x configure origsrc/libfishsound-0.7.0/src/libfishsound/Makefile.am src/libfishsound-0.7.0/src/libfishsound/Makefile.am
 --- origsrc/libfishsound-0.7.0/src/libfishsound/Makefile.am	2005-07-18 06:41:13.000000000 -0500
 +++ src/libfishsound-0.7.0/src/libfishsound/Makefile.am	2006-06-05 21:38:45.140625000 -0500
 @@ -24,5 +24,5 @@
