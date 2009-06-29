@@ -1,5 +1,5 @@
 category: Audio Libs
-requires: cygwin libogg-devel speex-devel libvorbis-devel
+requires: libogg-devel speex-devel libvorbis-devel
 external-source: libfishsound
 sdesc: "Vorbis/Speex wrapper library (development)"
 ldesc: "FishSound (libfishsound) provides a simple programming interface for

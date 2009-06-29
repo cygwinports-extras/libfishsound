@@ -1,5 +1,5 @@
 category: Audio
-requires: cygwin libfishsound1 liboggz1 libsndfile1
+requires: libfishsound1 liboggz1 libsndfile1
 sdesc: "Vorbis/Speex wrapper library (utilities)"
 ldesc: "FishSound (libfishsound) provides a simple programming interface for
 decoding and encoding audio data using the Xiph.Org codecs Vorbis and
